@@ -1,0 +1,17 @@
+- réduit le code HTML : de 401 lignes à 300 lignes
+& réduit le code CSS : de 1900 lignes à 750 lignes
+  => chargement des pages plus rapide et maintenance du site plus facile
+  => meilleur référencement sur les moteurs de recherche
+
+- site responsive (s'adapte à tout types d'écrans) : 
+  -> des petits téléphones portables au écran 4K
+
+- moderniser le design :
+  - utiliser du Material Design (charte graphique de Google)
+  - couleurs facilements interchangeables/modifiables
+  - utiliser toute la largeur de l'écran (au lieu des 900px du site initial)
+  - dynamiser le site (animations CSS)
+- utiliser les dernières normes et convention du W3C (standard Internet) ainsi  que de l'HTML 5 et du CSS 3 (dernières versions)
+- utiliser un préprocesseur CSS (Compass) ainsi que Babel (JS) pour la compatibilité avec les anciens navigateurs
+- utiliser un minimum de library et de framework afin de diminuer la taille du site
+

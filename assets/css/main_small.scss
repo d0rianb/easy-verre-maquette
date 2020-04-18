@@ -1,0 +1,154 @@
+@import "./variable";
+@media screen and (orientation: portrait) {
+    main {
+        top: $top * 2;
+    }
+
+    .header,
+    header {
+        flex-flow: column;
+        height: auto;
+        width: 100vw;
+
+        &-logo {
+            width: 100vw;
+            height: $top;
+            background: url("../img/logo3.png") no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            img {
+                display: none;
+            }
+        }
+
+        &-links {
+            position: relative;
+            top: $top;
+            height: $top;
+            width: 100vw;
+            padding: 0;
+            align-items: center;
+            background-color: $bg-color;
+            box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, .16);
+
+            a {
+                display: flex;
+                align-items: center;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .promo {
+        display: grid;
+        justify-content: stretch;
+        align-content: stretch;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title title" "left right" "description button";
+        grid-gap: 1em;
+
+        &-img {
+            display: none;
+        }
+
+        &-title {
+            text-indent: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        &-left,
+        &-right {
+            a img {
+                transform: scale(1);
+            }
+        }
+
+        &-text {
+            p {
+                text-align: justify;
+            }
+        }
+
+        &-description {
+            text-align: center;
+        }
+
+        &-button {
+            width: 66%;
+            height: 66%;
+        }
+    }
+
+    .mutuel {
+        &-list {
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                padding-bottom: 1em;
+
+                a {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    max-width: 5rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .breadcrumbs {
+        a {
+            padding-left: 10px;
+
+            span:first-child {
+                display: none;
+            }
+        }
+    }
+
+    .tiers {
+        &-content {
+            flex-flow: column;
+        }
+
+        &-text {
+            width: 100%;
+
+            ul {
+                padding: 1em;
+            }
+        }
+
+        &-video {
+            width: 100%;
+        }
+    }
+
+    .lunettes {
+        .container {
+            flex-flow: column;
+
+            .presentation {
+                width: 100%;
+            }
+
+            .buttons {
+                width: 100%;
+                flex-flow: row;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1em 0;
+
+                div {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

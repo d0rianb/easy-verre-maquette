@@ -1,0 +1,100 @@
+@media screen and (orientation: portrait) {
+  main {
+    top: 14vh; }
+
+  .header,
+  header {
+    flex-flow: column;
+    height: auto;
+    width: 100vw; }
+    .header-logo,
+    header-logo {
+      width: 100vw;
+      height: 7vh;
+      background: url("../img/logo3.png") no-repeat;
+      background-position: center;
+      background-size: contain; }
+      .header-logo img,
+      header-logo img {
+        display: none; }
+    .header-links,
+    header-links {
+      position: relative;
+      top: 7vh;
+      height: 7vh;
+      width: 100vw;
+      padding: 0;
+      align-items: center;
+      background-color: #F5F5F5;
+      box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.16); }
+      .header-links a,
+      header-links a {
+        display: flex;
+        align-items: center;
+        text-overflow: ellipsis; }
+
+  .promo {
+    display: grid;
+    justify-content: stretch;
+    align-content: stretch;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "left right" "description button";
+    grid-gap: 1em; }
+    .promo-img {
+      display: none; }
+    .promo-title {
+      text-indent: 0;
+      margin: auto;
+      text-align: center; }
+    .promo-left a img, .promo-right a img {
+      transform: scale(1); }
+    .promo-text p {
+      text-align: justify; }
+    .promo-description {
+      text-align: center; }
+    .promo-button {
+      width: 66%;
+      height: 66%; }
+
+  .mutuel-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 1em; }
+    .mutuel-list li a {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      max-width: 5rem;
+      height: auto; }
+
+  .breadcrumbs a {
+    padding-left: 10px; }
+    .breadcrumbs a span:first-child {
+      display: none; }
+
+  .tiers-content {
+    flex-flow: column; }
+  .tiers-text {
+    width: 100%; }
+    .tiers-text ul {
+      padding: 1em; }
+  .tiers-video {
+    width: 100%; }
+
+  .lunettes .container {
+    flex-flow: column; }
+    .lunettes .container .presentation {
+      width: 100%; }
+    .lunettes .container .buttons {
+      width: 100%;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1em 0; }
+      .lunettes .container .buttons div {
+        width: 35%; } }
+
+/*# sourceMappingURL=main_small.css.map */
